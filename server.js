@@ -7,15 +7,6 @@ const port = 3000;
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-//routes
-
-// app.get('/', (req, res) => {
-//     res.send('Hello NODE API')
-// })
-
-// app.get('/blog', (req, res) => {
-//     res.send('Hello Blog, My name is Devtamin')
-// })
 
 app.get('/posts', async(req, res) => {
     try { 
