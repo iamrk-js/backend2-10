@@ -17,6 +17,14 @@ app.get('/posts', async(req, res) => {
     }
 })
 
+app.get('/', async(req, res) => {
+  try { 
+      res.status(200).json("Hello NodeJS");
+  } catch (error) {
+      res.status(500).json({message: error.message})
+  }
+})
+
 
 
 
